@@ -12,6 +12,7 @@ import { HomeObservablesComponent } from './Lessons/Observables/home-observables
 import { UserObservablesComponent } from './Lessons/Observables/user-observables/user-observables.component';
 import { AppObservablesComponent } from './Lessons/Observables/app-observables/app-observables.component';
 
+import { UsersService } from './Lessons/Observables/users.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,12 +25,13 @@ import { AppObservablesComponent } from './Lessons/Observables/app-observables/a
   ],
   imports: [
 
+
   BrowserModule,
     FormsModule,
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
