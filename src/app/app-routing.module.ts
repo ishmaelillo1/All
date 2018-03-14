@@ -6,6 +6,7 @@ import { ErrorComponentComponent } from './All/error-component/error-component.c
 import { AppObservablesComponent } from './Lessons/Observables/app-observables/app-observables.component';
 import { HomeObservablesComponent } from './Lessons/Observables/home-observables/home-observables.component';
 import { UserObservablesComponent } from './Lessons/Observables/user-observables/user-observables.component';
+import { AppForm1Component } from './Lessons/Forms/Part1/app-form1/app-form1.component';
 // import { ErrorComponentComponent } from './error-component/error-component.component';
 // import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 const appRoutes: Routes = [
@@ -16,6 +17,7 @@ const appRoutes: Routes = [
       {path: 'user/:id', component: UserObservablesComponent}
     ]
     },
+    {path: 'FormsPart1', component: AppForm1Component},
     {path: 'not-found', component: ErrorComponentComponent, data: {message: 'Page not found!'}},
     {path: '**', redirectTo: 'not-found', pathMatch: 'full'}
 ];

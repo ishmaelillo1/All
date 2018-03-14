@@ -13,6 +13,7 @@ import { UserObservablesComponent } from './Lessons/Observables/user-observables
 import { AppObservablesComponent } from './Lessons/Observables/app-observables/app-observables.component';
 
 import { UsersService } from './Lessons/Observables/users.service';
+import { AppForm1Component } from './Lessons/Forms/Part1/app-form1/app-form1.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { UsersService } from './Lessons/Observables/users.service';
     ErrorComponentComponent,
     HomeObservablesComponent,
     UserObservablesComponent,
-    AppObservablesComponent
+    AppObservablesComponent,
+    AppForm1Component
   ],
   imports: [
 
