@@ -16,7 +16,7 @@ export class ErrorComponentComponent implements OnInit {
     (data: Data) => {
       this.errorMessage = data ['message'];
     }
-    )
+    );
 
   }
 }
