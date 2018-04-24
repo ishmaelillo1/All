@@ -14,6 +14,13 @@ import { AppObservablesComponent } from './Lessons/Observables/app-observables/a
 
 import { UsersService } from './Lessons/Observables/users.service';
 import { AppForm1Component } from './Lessons/Forms/Part1/app-form1/app-form1.component';
+import { HeaderForms1Component } from './Lessons/Forms/Part1/header-forms1/header-forms1.component';
+import { MainForms1Component } from './Lessons/Forms/Part1/main-forms1/main-forms1.component';
+import { AssignmentForms1Component } from './Lessons/Forms/Part1/assignment-forms1/assignment-forms1.component';
+import { HeaderForms2Component } from './Lessons/Forms/Part2/header-forms2/header-forms2.component';
+import { MainForms2Component } from './Lessons/Forms/Part2/main-forms2/main-forms2.component';
+import { AssignmentForms2Component } from './Lessons/Forms/Part2/assignment-forms2/assignment-forms2.component';
+import { AppForm2Component } from './Lessons/Forms/Part2/app-form2/app-form2.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +30,14 @@ import { AppForm1Component } from './Lessons/Forms/Part1/app-form1/app-form1.com
     HomeObservablesComponent,
     UserObservablesComponent,
     AppObservablesComponent,
-    AppForm1Component
+    AppForm1Component,
+    HeaderForms1Component,
+    MainForms1Component,
+    AssignmentForms1Component,
+    HeaderForms2Component,
+    MainForms2Component,
+    AssignmentForms2Component,
+    AppForm2Component
   ],
   imports: [
 
