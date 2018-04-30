@@ -1,3 +1,52 @@
-<p>
-  assignment-forms2 works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <form [formGroup]="assignmentForm" (ngSubmit)="onSubmit()">
+        <div formGroupName="projectData">
+          <div class="form-group">
+            <label for="projectname">Project Name:</label>
+            <input
+              type="text"
+              id="projectName"
+              formControlName="projectName"
+              class="form-control">
+              <span
+                *ngIf="!assignmentForm.get('projectData.projectName').valid && assignmentForm.get('projectData.projectName').touched"
+                class="help-block">
+                <span *ngIf = "assignmentForm.get('projectData.projectName').errors['projectIsForbidden'] "> This name is invalid !</span>
+                <span *ngIf = "assignmentForm.get('projectData.projectName').errors['required'] " >This field is required!</span>
+              </span>
+          </div>
+          <div class="form-group">
+            <label for="email">email</label>
+            <input
+              type="text"
+              id="email"
+              formControlName="email"
+              class="form-control">
+              <span
+                *ngIf="!assignmentForm.get('projectData.email').valid && assignmentForm.get('projectData.email').touched"
+                class="help-block">
+                Please enter a valid email
+              </span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="Status">Status</label>
+          <select
+            id="subscription"
+            class="form-control"
+            formControlName= "status"
+            name="status"
+            class="form-control"
+          >
+            <option
+              *ngFor="let status of projectStatus"
+              [value]="status">{{status}} </option>
+          </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
