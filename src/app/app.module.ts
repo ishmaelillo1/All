@@ -21,6 +21,12 @@ import { HeaderForms2Component } from './Lessons/Forms/Part2/header-forms2/heade
 import { MainForms2Component } from './Lessons/Forms/Part2/main-forms2/main-forms2.component';
 import { AssignmentForms2Component } from './Lessons/Forms/Part2/assignment-forms2/assignment-forms2.component';
 import { AppForm2Component } from './Lessons/Forms/Part2/app-form2/app-form2.component';
+import { MyMainPipesComponent } from './Lessons/my-pipes/my-main-pipes/my-main-pipes.component';
+import { MyAppPipesComponent } from './Lessons/my-pipes/my-app-pipes/my-app-pipes.component';
+import { AssignmentMyPipesComponent } from './Lessons/my-pipes/assignment-my-pipes/assignment-my-pipes.component';
+import { HeaderMyPipesComponent } from './Lessons/my-pipes/header-my-pipes/header-my-pipes.component';
+import { ShortenPipe } from './Lessons/my-pipes/shorten.pipes';
+import { FilterPipe } from './Lessons/my-pipes/filter.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,10 +43,16 @@ import { AppForm2Component } from './Lessons/Forms/Part2/app-form2/app-form2.com
     HeaderForms2Component,
     MainForms2Component,
     AssignmentForms2Component,
-    AppForm2Component
+    AppForm2Component,
+    MyMainPipesComponent,
+    MyAppPipesComponent,
+    AssignmentMyPipesComponent,
+    HeaderMyPipesComponent,
+    ShortenPipe,
+    FilterPipe
   ],
   imports: [
-    BrowserModule,
+  BrowserModule,
     FormsModule,
     HttpModule,
     AppRoutingModule,
