@@ -12,6 +12,9 @@ import { AssignmentForms1Component } from './Lessons/Forms/Part1/assignment-form
 import { MainForms2Component } from './Lessons/Forms/Part2/main-forms2/main-forms2.component';
 import { AppForm2Component } from './Lessons/Forms/Part2/app-form2/app-form2.component';
 import { AssignmentForms2Component } from './Lessons/Forms/Part2/assignment-forms2/assignment-forms2.component';
+import { MyMainPipesComponent } from './Lessons/my-pipes/my-main-pipes/my-main-pipes.component';
+import { MyAppPipesComponent } from './Lessons/my-pipes/my-app-pipes/my-app-pipes.component';
+import { AssignmentMyPipesComponent } from './Lessons/my-pipes/assignment-my-pipes/assignment-my-pipes.component';
 // import { ErrorComponentComponent } from './error-component/error-component.component';
 // import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 const appRoutes: Routes = [
@@ -32,11 +35,17 @@ const appRoutes: Routes = [
       {path: 'Assignment', component: AssignmentForms2Component}
       ]
     },
+    { path: 'Pipes', component: MyMainPipesComponent, children : [
+      {path: 'Lesson', component: MyAppPipesComponent},
+      {path: 'Assignment', component: AssignmentMyPipesComponent}
+      ]
+    },
     {path: 'not-found', component: ErrorComponentComponent, data: {message: 'Page not found!'}},
     {path: '**', redirectTo: 'not-found', pathMatch: 'full'}
 ];
 @NgModule({
     imports: [RouterModule.forRoot(appRoutes)],
+
 
 
 exports: [RouterModule]
