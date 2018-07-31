@@ -27,6 +27,8 @@ import { AssignmentMyPipesComponent } from './Lessons/my-pipes/assignment-my-pip
 import { HeaderMyPipesComponent } from './Lessons/my-pipes/header-my-pipes/header-my-pipes.component';
 import { ShortenPipe } from './Lessons/my-pipes/shorten.pipes';
 import { FilterPipe } from './Lessons/my-pipes/filter.pipe';
+import { ReversePipe } from './reverse.pipe';
+import { SortPipe } from './Lessons/my-pipes/sort.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +51,9 @@ import { FilterPipe } from './Lessons/my-pipes/filter.pipe';
     AssignmentMyPipesComponent,
     HeaderMyPipesComponent,
     ShortenPipe,
-    FilterPipe
+    FilterPipe,
+    ReversePipe,
+    SortPipe
   ],
   imports: [
   BrowserModule,
