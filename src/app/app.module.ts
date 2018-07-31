@@ -29,6 +29,8 @@ import { ShortenPipe } from './Lessons/my-pipes/shorten.pipes';
 import { FilterPipe } from './Lessons/my-pipes/filter.pipe';
 import { ReversePipe } from './reverse.pipe';
 import { SortPipe } from './Lessons/my-pipes/sort.pipe';
+import { StartComponent } from './Lessons/http/start/start.component';
+import { MyAppHttpStartComponent } from './Lessons/http/start/my-app-http-start/my-app-http-start.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +55,9 @@ import { SortPipe } from './Lessons/my-pipes/sort.pipe';
     ShortenPipe,
     FilterPipe,
     ReversePipe,
-    SortPipe
+    SortPipe,
+    StartComponent,
+    MyAppHttpStartComponent
   ],
   imports: [
   BrowserModule,

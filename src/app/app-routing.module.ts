@@ -15,6 +15,9 @@ import { AssignmentForms2Component } from './Lessons/Forms/Part2/assignment-form
 import { MyMainPipesComponent } from './Lessons/my-pipes/my-main-pipes/my-main-pipes.component';
 import { MyAppPipesComponent } from './Lessons/my-pipes/my-app-pipes/my-app-pipes.component';
 import { AssignmentMyPipesComponent } from './Lessons/my-pipes/assignment-my-pipes/assignment-my-pipes.component';
+import { StartComponent } from './Lessons/http/start/start.component';
+import { MyAppHttpStartComponent } from './Lessons/http/start/my-app-http-start/my-app-http-start.component';
+
 // import { ErrorComponentComponent } from './error-component/error-component.component';
 // import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 const appRoutes: Routes = [
@@ -38,6 +41,10 @@ const appRoutes: Routes = [
     { path: 'Pipes', component: MyMainPipesComponent, children : [
       {path: 'Lesson', component: MyAppPipesComponent},
       {path: 'Assignment', component: AssignmentMyPipesComponent}
+      ]
+    },
+    { path: 'HTTP', component: StartComponent, children : [
+      {path: 'Lesson', component: MyAppHttpStartComponent},
       ]
     },
     {path: 'not-found', component: ErrorComponentComponent, data: {message: 'Page not found!'}},
