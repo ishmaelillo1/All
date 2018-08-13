@@ -31,6 +31,8 @@ import { ReversePipe } from './reverse.pipe';
 import { SortPipe } from './Lessons/my-pipes/sort.pipe';
 import { StartComponent } from './Lessons/http/start/start.component';
 import { MyAppHttpStartComponent } from './Lessons/http/start/my-app-http-start/my-app-http-start.component';
+import { ServerService } from './Lessons/http/start/servers2.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,7 +68,7 @@ import { MyAppHttpStartComponent } from './Lessons/http/start/my-app-http-start/
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [UsersService],
+  providers: [UsersService, ServerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
